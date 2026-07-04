@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bubble Sort</h1>
+    <p class="desc">
+        Enter the numbers separated by commas, then watch the stickman perform Bubble Sort.
+    </p>
+
+    <div class="complexity">
+        <span class="time">Time: O(n²)</span>
+        <span class="space">Space: O(1)</span>
+    </div>
+
+    <!-- إدخال الأرقام -->
+    <div class="input-area">
+        <input
+            type="text"
+            id="numbersInput"
+            placeholder="Example: 45,68,30,90,51">
+    </div>
+
+    <!-- منطقة العرض -->
+    <div class="stage" id="stage">
+
+        <div class="platform"></div>
+
+        <div class="stickman" id="stickman">
+            <div class="head"></div>
+            <div class="arm-line"></div>
+            <div class="body"></div>
+            <div class="legs">
+                <div class="leg leg-left"></div>
+                <div class="leg leg-right"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="startBtn">ابدأ الترتيب</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

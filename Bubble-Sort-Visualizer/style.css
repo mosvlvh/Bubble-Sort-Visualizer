@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.desc {
+  color: #9a9a9a;
+  max-width: 500px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.complexity {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #161616;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 14px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  font-weight: bold;
+}
+
+.time {
+  color: #4da6ff;
+}
+
+.space {
+  color: #ff9d4d;
+}
+
+/* ============================= */
+/* مربع إدخال الأرقام */
+/* ============================= */
+
+.input-area {
+  margin-bottom: 25px;
+}
+
+#numbersInput {
+  width: 340px;
+  max-width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+#numbersInput:focus {
+  border-color: #2b6bff;
+  box-shadow: 0 0 10px rgba(43, 107, 255, 0.5);
+}
+
+#numbersInput::placeholder {
+  color: #888;
+}
+
+/* ============================= */
+/* منصة العرض */
+/* ============================= */
+
+.stage {
+  position: relative;
+  width: 600px;
+  height: 320px;
+  margin: 0 auto 30px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  background: #111111;
+  overflow: hidden;
+}
+
+.platform {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: linear-gradient(180deg, #3a3a3a, #1a1a1a);
+  border-top: 1px solid #4a4a4a;
+}
+
+/* ============================= */
+/* الكرات */
+/* ============================= */
+
+.ball {
+  position: absolute;
+  bottom: 54px;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #9a9a9a, #4a4a4a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transition: transform .5s ease, background .3s ease;
+}
+
+.ball.active {
+  background: radial-gradient(circle at 30% 30%, #ff8080, #cc1f1f);
+  box-shadow: 0 0 18px rgba(255, 40, 40, .7);
+}
+
+.ball.sorted {
+  background: radial-gradient(circle at 30% 30%, #8bffb0, #1f9d4d);
+}
+
+/* ============================= */
+/* الرجل */
+/* ============================= */
+
+.stickman {
+  position: absolute;
+  bottom: 54px;
+  left: 0;
+  width: 4px;
+  transition: transform .5s ease;
+}
+
+.stickman .head {
+  width: 24px;
+  height: 24px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 68px;
+  left: -12px;
+}
+
+.stickman .body {
+  width: 3px;
+  height: 45px;
+  background: white;
+  position: absolute;
+  bottom: 25px;
+  left: -1px;
+}
+
+.stickman .arm-line {
+  width: 70px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  bottom: 55px;
+  left: -35px;
+}
+
+.stickman .legs {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+}
+
+.stickman .leg {
+  width: 3px;
+  height: 28px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  transform-origin: top;
+}
+
+.stickman .leg-left {
+  transform: rotate(20deg);
+  left: -14px;
+}
+
+.stickman .leg-right {
+  transform: rotate(-20deg);
+  left: 8px;
+}
+
+/* ============================= */
+/* الزر */
+/* ============================= */
+
+#startBtn {
+  background: #2b6bff;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#startBtn:hover {
+  background: #1d54cc;
+}
+
+#startBtn:disabled {
+  background: #3a3a3a;
+  cursor: not-allowed;
+}
