@@ -47,4 +47,4 @@ Click ابدأ الترتيب.
 Mohammed Salah
 
 
-![Project Screenshot](assets/demo.gif)
+![Project shwo](assets/demo.gif)
