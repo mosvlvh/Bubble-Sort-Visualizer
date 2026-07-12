@@ -41,7 +41,7 @@ Open index.html in your browser.
 Enter numbers separated by commas.
 
 Click ابدأ الترتيب.
-demo.gif
+
 ## Author
 
 Mohammed Salah
